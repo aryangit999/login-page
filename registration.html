@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=UTF-8, initial-scale=1.0">
+  <title>HTML Forms Tutorial</title>
+  <style>
+    body{
+      background-color: rgb(105, 125, 26);
+    }
+        .body{
+          background-color: rgb(176, 176, 44);
+          padding: 50px;
+          margin: 100px;
+          border-radius: 50px;
+          box-shadow: 10px 10px rgb(18, 5, 31);
+        }
+        h2{
+          padding: 15px;
+          color: rgb(4, 5, 3);
+          border-radius: 100px;
+          border-bottom: 5px solid red;
+          border-right: 5px solid red;
+          text-align: center;
+          cursor: pointer;
+        }
+        .name{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .number{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .gender{
+          padding: 25px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .DOB{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .Course{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .password{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        .sub{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+          text-align: center;
+        }
+        select{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+          background-color: greenyellow;
+        }
+        .gmail{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+        }
+        input{
+          padding: 15px;
+          border: 5px;
+          border-bottom: 5px solid red;
+          border-radius: 100px;
+          background-color: greenyellow;
+          cursor: pointer;
+        }
+        input.sub:hover{
+          border-radius: 20px;
+          background-color: rgb(227, 130, 19);
+        }
+        #date{
+          color: black;
+          border: 5px red;
+          padding: 15px;
+          background-color: red;
+          border-radius: 20px;
+          border-bottom: 5px solid black;
+          border-right: 5px solid black;
+          margin: 20px;
+          text-align: center;
+        }
+  </style>
+</head>
+<body>
+  <div id="date">
+  </div>
+  <div class="body">
+    <h2>
+      <b>
+        Coder's Registration form
+      </b>
+  </h2>
+  <div class="name">
+    <p>
+      Name :<input type="text" class="name" placeholder="Enter full name">
+    </p>
+  </div>
+  <Div class="number">
+    <p>
+      Phone no. <input type="number" class="number"placeholder="Enter no.">
+    </p>
+  </Div>
+      <div class="gender">
+      male<input type="radio" name="gender" class="gender">
+      female <input type="radio" name="gender">
+      Other <input type="radio" name="gender">
+      </div>
+  <div class="DOB">
+        <p>
+          Enter DOB :<input type="date" class="DOB">
+        </p>
+  </div>
+  <div class="Course">
+    <p>
+      Select your Course :
+      <Select name="Course">
+        <option value="Select">Select</option>
+        <option value="BCA">BCA</option>
+        <option value="BSC">BSC</option>
+        <option value="B.tech">B.tech</option>
+        <option value="B.pharma">B.pharma</option>
+        <option value="Diploma">Diploma</option>
+        <option value="Other">Other</option>
+      </Select>
+    </p>
+  </div>
+  <div class="gmail">
+    <p>
+      gmail id : <input type="text" class="gmail" placeholder="Enter gmail">
+    </p>
+  </div>
+  <div class="password">
+    <p>        
+      password : <input type="password" class="password" placeholder="Enter password">
+    </p>
+  </div>
+  <div class="sub">
+    <p>
+        <input type="submit" class="sub">
+    </p>
+  </div>
+  </div>
+</body>
+<script>
+  function showTime() {
+        time = new Date();
+        document.getElementById('date').innerHTML = time;
+    }
+    setInterval(showTime,1000)
+</script>
+</html>
